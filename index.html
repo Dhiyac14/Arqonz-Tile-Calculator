@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQONZ - Tile Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="ARQONZ Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>ARQONZ.COM</h1>
+                    <p>The construction E-ecosystem</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Tools</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="signup-btn">Sign Up</a>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <div class="tile-calculator-intro">
+                <div class="icon-title">
+                    <i class="fas fa-calculator"></i>
+                    <h2>Tile Calculator</h2>
+                </div>
+                <h3>Easy Steps</h3>
+            </div>
+            <div class="how-to-use">
+                <h3>How To Use Tile Calculator</h3>
+                <ol>
+                    <li>STEP 1: Let us know whether you are looking for floor or wall tiles.</li>
+                    <li>STEP 2: Let us know the total area of the space. Please ensure to deduct the area of any doors or windows to arrive at the final area. Please enter the area in either Sq. Feet or Sq. Metre only.</li>
+                    <li>STEP 3: Select the size of the tile you want from the dropdown option and click Calculate.</li>
+                    <li>STEP 4: You will get the total number of tiles required or total number of boxes of tiles required.</li>
+                </ol>
+                <p>Note: Total tiles required are adjusted by 10% considering for wastage and design matching. It is assumed 4 tiles per box as a standard to calculate boxes.</p>
+            </div>
+        </aside>
+
+        <section class="chatbot-section">
+            <h2 class="section-title">Tile Calculator</h2>
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <div class="message bot-message">Hi there! Ready to calculate your tiling needs? Let's get started! First, tell me what room you're tiling.</div>
+                </div>
+                <div class="input-area">
+                    <div class="quick-replies" id="quick-replies"></div>
+                    <input type="text" id="user-input" placeholder="Type your message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="related-products-section">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Somany Duragres Grande Valor Breccia Grey FP Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Somany Duragres Grande Valor Breccia Grey FP Glossy...</p>
+                    <p class="product-price">₹70<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Bronze Tropic White Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Bronze Tropic White Glossy 600 mm x 600 mm Double ...</p>
+                    <p class="product-price">₹42<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Kajaria Eternity Tresor Gris Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Kajaria Eternity Tresor Gris Glossy 1200 mm x 600 ...</p>
+                    <p class="product-price">₹72<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Sunheartt Elapse White Matte Tile">
+                <div class="product-info">
+                    <p class="product-title">Sunheartt Elapse White Matte 600 mm x 600 mm GVT T...</p>
+                    <p class="product-price">₹49<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Kajaria Eternity Timber Rose Wood Matte Tile">
+                <div class="product-info">
+                    <p class="product-title">Kajaria Eternity Timber Rose Wood Matte 1200 mm x ...</p>
+                    <p class="product-price">₹72<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Somany Duragres Strio Valor Argent Wood Ash Matte Tile">
+                <div class="product-info">
+                    <p class="product-title">Somany Duragres Strio Valor Argent Wood Ash Matte ...</p>
+                    <p class="product-price">₹90<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Kajaria Eternity Inferno Bronze Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Kajaria Eternity Inferno Bronze Glossy 1200 mm x 6...</p>
+                    <p class="product-price">₹82<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Somany Duragres Valor Amsterdam FP Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Somany Duragres Valor Amsterdam FP Glossy 600 mm x...</p>
+                    <p class="product-price">₹63<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Somany Duragres Valor Glaicer White FP Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Somany Duragres Valor Glaicer White FP Glossy...</p>
+                    <p class="product-price">₹70<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Shreeji Smooth Statuario Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Shreeji Smooth Statuario Glossy 1200 mm x 600 ...</p>
+                    <p class="product-price">₹51<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Kajaria Eternity Silvia Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Kajaria Eternity Silvia Glossy 1200 mm x 600 ...</p>
+                    <p class="product-price">₹72<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200" alt="Kajaria Eternity Kashmir Marfil Glossy Tile">
+                <div class="product-info">
+                    <p class="product-title">Kajaria Eternity Kashmir Marfil Glossy 600 mm x 60...</p>
+                    <p class="product-price">₹66<span>/sq.ft.</span></p>
+                    <p class="product-reviews">24 Reviews</p>
+                    <button class="view-btn">View</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="ARQONZ Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>ARQONZ.COM</h1>
+                    <p>The construction E-ecosystem</p>
+                </div>
+            </div>
+            <p>From concept to completion & beyond, ArqonZ offers comprehensive solutions to elevate your Construction & interior business.</p>
+            <p>Chennai, India</p>
+        </div>
+        <div class="footer-center">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li>Architects</li>
+                    <li>Builders</li>
+                    <li>Contractors</li>
+                    <li>Designers</li>
+                    <li>Engineers</li>
+                    <li>Manufacturers</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Contact Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy policy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h3>Download Our App</h3>
+            <div class="app-buttons">
+                <a href="#"><img src="https://via.placeholder.com/120x40" alt="Download on the App Store"></a>
+                <a href="#"><img src="https://via.placeholder.com/120x40" alt="Get it on Google Play"></a>
+            </div>
+        </div>
+        <p class="copyright">© Copyright © 2024 Arqonz | All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
