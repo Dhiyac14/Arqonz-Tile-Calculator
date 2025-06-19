@@ -47,7 +47,7 @@ index.html, style.css, script.js  # (if using static HTML for demo)
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Dhiyac14/Arqonz-Tile-Calculator.git
 cd ARQONZ
 ```
 
