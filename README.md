@@ -2,7 +2,6 @@
 
 A full-stack web application for calculating tile requirements for construction projects. This project features a conversational AI chatbot (powered by Google Gemini) to guide users through the process, a modern React frontend, and a Flask backend for calculations and AI integration.
 
----
 
 ## 🚀 Features
 
@@ -26,8 +25,6 @@ A full-stack web application for calculating tile requirements for construction 
 - Integrates Google Gemini (Generative AI) for natural conversation.
 - Handles parsing of user input, area, and tile size in various formats.
 - Stateless API endpoint for chatbot interaction.
-
----
 
 ## 🗂️ Project Structure
 
