@@ -26,6 +26,7 @@ A full-stack web application for calculating tile requirements for construction 
 - Handles parsing of user input, area, and tile size in various formats.
 - Stateless API endpoint for chatbot interaction.
 
+
 ## 🗂️ Project Structure
 
 ```
@@ -41,7 +42,6 @@ requirements.txt      # Python dependencies
 index.html, style.css, script.js  # (if using static HTML for demo)
 ```
 
----
 
 ## 🛠️ Installation & Setup
 
@@ -82,7 +82,6 @@ cd ARQONZ
   ```
   The frontend runs on [http://localhost:3000](http://localhost:3000) and proxies API requests to the Flask backend.
 
----
 
 ## 🧑‍💻 Usage Guide
 
@@ -94,7 +93,6 @@ cd ARQONZ
 
 **Note:** The chatbot guides you through each step and handles ambiguous input gracefully.
 
----
 
 ## 🛣️ API Endpoints
 
@@ -103,7 +101,6 @@ cd ARQONZ
   - Response: `{ "reply": "<bot reply>", "quick_replies": [ ... ], "step": <step_number> }`
   - Stateless; conversation state is managed in-memory per user session.
 
----
 
 ## 🧰 Technologies Used
 
@@ -112,18 +109,6 @@ cd ARQONZ
 - **AI Integration:** Google Gemini (Generative AI)
 - **Other:** html2pdf.js (for PDF export), dotenv
 
----
 
-## 📁 Folder Structure (Key Files)
-
-- `app.py` — Flask backend with all calculation and chat logic
-- `requirements.txt` — Python dependencies
-- `companyfrontend/` — React frontend
-  - `src/components/Chatbot.js` — Main chatbot logic
-  - `src/components/ProductCard.js` — Product display
-  - `src/components/Header.js`, `Footer.js`, `Sidebar.js` — Layout
-  - `App.js` — Main React app
-
----
 
 
